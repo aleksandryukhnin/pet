@@ -3,6 +3,16 @@
     margin: 0;
     padding: 0;
   }
+
+  main {
+    max-width: 1300px;
+    width: 100%;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+  }
   
   section {
     width: 185px;
@@ -13,8 +23,8 @@
     border: 2px solid black;
     width: 320px;
     height: 200px;
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    top: 15em;
     /*margin: 15px auto;
     text-align: center;*/
   }

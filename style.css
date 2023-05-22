@@ -116,6 +116,8 @@ body {
   .container-grids {
     display: flex;
     width: 100%;
+    height: 35em;
+    overflow: auto;
     /* flex-wrap: wrap; */
     align-items: center;
     margin-top: 25px;
@@ -123,9 +125,8 @@ body {
   }
   
   .container-grids__grid-view {
-    position: absolute;
-    right: 125px;
-    top: 75px;
+    position: relative;
+    left: 31em;
   }
   
   .container-item {
@@ -140,7 +141,7 @@ body {
   .container-item__name,
   .container-item__price {
     position: relative;
-    bottom: 10px;
+    bottom: 1em;
   }
   
   .price {
