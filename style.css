@@ -110,7 +110,35 @@ body {
   }
 
   .electronics {
-    background-position: 2px 2px;
+    background-position: 158px 1px;
+  }
+
+  .furniture {
+    background-position: -4px -1px;
+  }
+
+  .fashion {
+    background-position: 116px -1px;
+  }
+
+  .shoes {
+    background-position: -44px -1px;
+  }
+
+  .accessories {
+    background-position: 74px -1px;
+  }
+
+  .sportling {
+    background-position: 199px -1px;
+  }
+
+  .health {
+    background-position: 36px -1px;
+  }
+
+  .toys {
+    background-position: -84px -1px;
   }
   
   ul {
