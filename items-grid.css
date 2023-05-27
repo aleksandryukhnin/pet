@@ -1,3 +1,7 @@
+html {
+  height: 100%;
+}
+
 body {
   max-width: 1300px;
   width: 100%;
@@ -5,6 +9,9 @@ body {
   padding: 0;
   font-family: Arial, Roboto, sans-serif;
   border: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .header-content,
@@ -34,7 +41,7 @@ body {
 }
 
 .header-content-right-search__img {
-  width: 25px;
+  width: 22px;
   height: 17px;
   position: relative;
   margin: 6px 0 0 2px;
@@ -88,6 +95,11 @@ header {
   height: 60px;
 }
 
+main {
+  flex: 1 0 auto;
+  z-index: 0;
+}
+
 .container-navigation {
   width: 15%;
   border-right: 2px solid #000;
@@ -98,7 +110,45 @@ header {
 .container-name-link {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+}
+
+.container-sprite {
+  background-image: url(../images/sprite.png);
+  width: 40px;
+  height: 40px;
+}
+
+.electronics {
+  background-position: 158px 1px;
+}
+
+.furniture {
+  background-position: -4px -1px;
+}
+
+.fashion {
+  background-position: 116px -1px;
+}
+
+.shoes {
+  background-position: -44px -1px;
+}
+
+.accessories {
+  background-position: 74px -1px;
+}
+
+.sportling {
+  background-position: 199px -1px;
+}
+
+.health {
+  background-position: 36px -1px;
+}
+
+.toys {
+  background-position: -84px -1px;
 }
 
 ul {
@@ -114,14 +164,15 @@ li {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 25px;
+  justify-content: flex-start;
+  margin: 35px 0 0 15px;
+  position: relative;
 }
 
 .container-grids__list-view {
   position: absolute;
-  right: 125px;
-  top: 75px;
+  right: 1em;
+  top: -1em;
 }
 
 .container-item {
@@ -133,15 +184,20 @@ li {
 
 .container-item__name,
 .container-item__price {
-  margin: 0 0 0 20px;
+  margin: 0 0 0 24px;
   position: relative;
-  bottom: 15px;
+  bottom: 13px;
 }
 
 footer {
   border-top: 2px solid #000;
-  position: relative;
-  margin-top: 10px;
+  /*margin-top: 10px;*/
+  flex: 0 0 auto;
+  width: 1300px;
+  z-index: 2;
+  background-color: #fff;
+  bottom: 0;
+  position: fixed;
 }
 
 .footer-container {

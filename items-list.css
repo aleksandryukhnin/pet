@@ -107,7 +107,7 @@ main {
 .container-name-link {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .container-sprite {
@@ -170,8 +170,8 @@ li {
 
 .container-grids__grid-view {
   position: relative;
-  left: 31em;
-  top: 2em
+  left: 32em;
+  top: 1em
 }
 
 .container-item {
