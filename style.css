@@ -101,7 +101,7 @@ main {
   width: 15%;
   border-right: 2px solid #000;
   padding-top: 25px;
-  margin-bottom: -10px;
+  /*margin-bottom: -10px; --Выступала линия внизу, на футер наезжала*/ 
 }
 
 .container-name-link {
@@ -221,7 +221,7 @@ footer {
   flex: 0 0 auto;
   width: 1300px;
   z-index: 2;
-  background-color: #afa9a9;
+  background-color: #fff;
 }
 
 .footer-container {
