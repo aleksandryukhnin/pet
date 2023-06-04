@@ -183,7 +183,7 @@ li {
   align-items: center;
 }
 
-.product-info {
+.container-item-product-info {
   width: 30em;
   position: relative;
   right: 1em;
