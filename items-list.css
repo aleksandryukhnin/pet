@@ -166,6 +166,7 @@ li {
   align-items: center;
   /* margin-top: 25px; */
   flex-direction: column;
+  margin-bottom: 25px;
 }
 
 .container-grids__grid-view {
