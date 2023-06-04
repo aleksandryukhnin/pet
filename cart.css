@@ -188,6 +188,11 @@ body {
     filter: brightness(80%) contrast(70%);
     margin-left: 10px;
   }
+
+  button:hover {
+    cursor: pointer;
+   box-shadow: 0px 0px 5px 2px #f0f0f0;
+  }
   
   .price {
     align-items: center;

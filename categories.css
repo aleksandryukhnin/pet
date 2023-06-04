@@ -90,6 +90,16 @@ header {
   height: 60px;
 }
 
+main {
+display: flex;
+align-items: center;
+min-height: 100vh;
+/* z-index: 8; */
+/* flex: 0 1 auto; */
+/* overflow: hidden; */
+position: absolute;
+}
+
 .container {
   flex-wrap: wrap;
   max-width: 1300px;
