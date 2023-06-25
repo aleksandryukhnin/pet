@@ -83,12 +83,14 @@ body {
   header {
     border-bottom: 2px solid;
     height: 60px;
+    flex: 0 0 auto;
   }
   
   main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1 0 auto;
   }
   
   .container {
@@ -145,6 +147,7 @@ body {
   footer {
     border-top: 2px solid #000;
     position: relative;
+    flex: 0 0 auto;
   }
   
   .footer-container {
