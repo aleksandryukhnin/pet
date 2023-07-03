@@ -21,7 +21,7 @@ body {
 
 .header-content,
 .container,
-.footer_container {
+.footer-container {
   display: flex;
   justify-content: space-between;
   margin: 0 5px 0 15px;
