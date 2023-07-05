@@ -31,6 +31,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
   }
   
   .header-content-left {
@@ -106,8 +107,59 @@
   .main-order-form, .main-order-form-code {
     border: 2px solid #000;
     height: 180px;
+    width: 400px;
   }
+
+  input {
+    border: 2px solid #000;
+    height: 20px;
+    padding-left: 3px;
+}
+
+.main-order-form-card__number-input {
+    width: 95%;
+    text-align: left;
+    word-spacing: 7px;
+    padding-left: 10px;
+}
+
+input[placeholder="MM"] {
+    margin: 20px 0 15px 0;
+    width: 13%;
+}
+
+input[placeholder="YYYY"] {
+    width: 16%;
+}
+
+input[placeholder="123"] {
+    width: 80px;
+}
+
+  .main-order-form {
+    margin-top: 60px;
+    z-index: 1;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-order-form-code {
+    position: absolute;
+    right: 480px;
+    object-fit: cover;
+}
   
+.main-order-form-numbers {
+    display: flex;
+    justify-content: right;
+    height: 100%;
+    align-items: center;
+    margin: -31px 15px 31px 0;
+    /* position: relative; */
+}
   
   
   
