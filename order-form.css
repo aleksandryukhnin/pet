@@ -12,7 +12,6 @@
     max-width: 1300px;
     width: 100%;
     margin: 0 auto;
-    padding: 0;
     border: 2px solid #000;
     display: flex;
     flex-direction: column;
@@ -147,8 +146,8 @@ input[placeholder="123"] {
 }
 
 .main-order-form-code {
-    position: absolute;
-    right: 480px;
+    position: relative;
+    right: 20%;
     object-fit: cover;
 }
   
@@ -159,6 +158,21 @@ input[placeholder="123"] {
     align-items: center;
     margin: -31px 15px 31px 0;
     /* position: relative; */
+}
+
+.main-order-form__button-finish {
+    position: absolute;
+    bottom: -8%;
+}
+
+button {
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 5px;
+    width: 160px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
 }
   
   
@@ -171,6 +185,8 @@ input[placeholder="123"] {
   
   .footer-container {
     justify-content: center;
+    height: 3em;
+    align-items: center;
   }
   
   .footer-container__text {
