@@ -15,7 +15,7 @@
     border: 2px solid #000;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    height: 100%;
   }
   
   .header-content,
@@ -30,7 +30,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     flex-direction: column;
     position: relative;
   }
@@ -103,40 +103,47 @@
   header {
     border-bottom: 2px solid;
     height: 60px;
+    flex: 0 0 auto;
   }
   
-  .main-order-form, .main-order-form-code {
+  main {
+      flex: 1 0 auto;
+      /* height: 100%; */
+  }
+  
+  .main-order-form,
+  .main-order-form-code {
     border: 2px solid #000;
     height: 180px;
     width: 400px;
   }
-
+  
   input {
     border: 2px solid #000;
     height: 20px;
     padding-left: 3px;
-}
-
-.main-order-form-card__number-input {
+  }
+  
+  .main-order-form-card__number-input {
     width: 95%;
     text-align: left;
-    word-spacing: 7px;
+    word-spacing: 55px;
     padding-left: 10px;
-}
-
-input[placeholder="MM"] {
+  }
+  
+  input[placeholder="MM"] {
     margin: 20px 0 15px 0;
     width: 13%;
-}
-
-input[placeholder="YYYY"] {
+  }
+  
+  input[placeholder="YYYY"] {
     width: 16%;
-}
-
-input[placeholder="123"] {
+  }
+  
+  input[placeholder="123"] {
     width: 80px;
-}
-
+  }
+  
   .main-order-form {
     /* margin-top: 60px; */
     z-index: 1;
@@ -145,29 +152,29 @@ input[placeholder="123"] {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.main-order-form-code {
+  }
+  
+  .main-order-form-code {
     position: absolute;
     margin: 0 0 50px 290px;
     object-fit: cover;
-}
+  }
   
-.main-order-form-numbers {
+  .main-order-form-numbers {
     display: flex;
     justify-content: right;
     height: 100%;
     align-items: center;
     margin: -41px 15px 0 0;
     position: relative;
-}
-
-.main-order-form__button-finish {
+  }
+  
+  .main-order-form__button-finish {
     position: absolute;
-    bottom: 10%;
-}
-
-button {
+    margin-top: 270px;
+  }
+  
+  button {
     border: 2px solid #000;
     border-radius: 20px;
     padding: 5px;
@@ -175,9 +182,7 @@ button {
     font-size: 16px;
     letter-spacing: 1px;
     font-weight: 500;
-}
-  
-  
+  }
   
   footer {
     border-top: 2px solid #000;
@@ -201,3 +206,4 @@ button {
     align-items: center;
     padding: inherit;
   }
+  
