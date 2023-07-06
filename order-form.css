@@ -31,6 +31,8 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
+    position: relative;
   }
   
   .header-content-left {
@@ -136,7 +138,7 @@ input[placeholder="123"] {
 }
 
   .main-order-form {
-    margin-top: 60px;
+    /* margin-top: 60px; */
     z-index: 1;
     background-color: #fff;
     display: flex;
@@ -146,8 +148,8 @@ input[placeholder="123"] {
 }
 
 .main-order-form-code {
-    position: relative;
-    right: 20%;
+    position: absolute;
+    margin: 0 0 50px 290px;
     object-fit: cover;
 }
   
@@ -156,13 +158,13 @@ input[placeholder="123"] {
     justify-content: right;
     height: 100%;
     align-items: center;
-    margin: -31px 15px 31px 0;
-    /* position: relative; */
+    margin: -41px 15px 0 0;
+    position: relative;
 }
 
 .main-order-form__button-finish {
     position: absolute;
-    bottom: -8%;
+    bottom: 10%;
 }
 
 button {
