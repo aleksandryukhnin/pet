@@ -137,6 +137,10 @@
     width: 80px;
   }
 
+  .main-order-form__input-name {
+    text-transform: uppercase;
+  }
+
   .input-form {
     border: 2px solid #000;
     height: 20px;
