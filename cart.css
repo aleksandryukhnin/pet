@@ -212,11 +212,13 @@ body {
     height: 35px;
     /*filter: brightness(80%) contrast(70%);*/
     margin-left: 10px;
+    transition: 0.5s linear;
   }
 
   button:hover {
    cursor: pointer;
-   box-shadow: 0px 0px 5px 2px #9d9b9b;
+   box-shadow: 0px 2px 5px 2px #9d9b9b;
+   transition: 0.5s linear;
   }
   
   .price {
