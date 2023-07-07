@@ -207,7 +207,7 @@ li {
   border-radius: 25px;
   width: 100px;
   height: 25px;
-  filter: brightness(80%) contrast(70%);
+  /*filter: brightness(80%) contrast(70%);*/
   top: 5px;
   position: relative;
 }
