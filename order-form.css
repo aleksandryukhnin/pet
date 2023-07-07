@@ -1,10 +1,21 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Roboto, sans-serif;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
     max-width: 1300px;
     width: 100%;
     margin: 0 auto;
-    padding: 0;
-    font-family: Arial, Roboto, sans-serif;
     border: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
   
   .header-content,
@@ -13,6 +24,15 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 0 5px 0 15px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
   }
   
   .header-content-left {
@@ -83,99 +103,114 @@ body {
   header {
     border-bottom: 2px solid;
     height: 60px;
+    flex: 0 0 auto;
   }
   
-  .container-navigation {
-    width: 15%;
-    border-right: 2px solid #000;
-    padding-top: 25px;
-    margin-bottom: -10px;
+  main {
+      flex: 1 0 auto;
+      /* height: 100%; */
   }
   
-  /*.sprite {
-    background: url(../pet-project/images/css_sprites.png);
-
-
-  }*/
-
-  .container-name-link {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-  
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  li {
-    list-style: none;
-  }
-  
-  .container-grids {
-    display: flex;
-    width: 100%;
-    height: 35em;
-    overflow: auto;
-    /* flex-wrap: wrap; */
-    align-items: center;
-    margin-top: 25px;
-    flex-direction: column;
-  }
-  
-  .container-grids__grid-view {
-    position: relative;
-    left: 31em;
-  }
-  
-  .container-item {
-    width: 40%;
-    display: flex;
-    /* flex-direction: column; */
-    /*margin-bottom: 10px;*/
-    /* justify-content: space-around; */
-    align-items: center;
-  }
-  
-  .container-item__name,
-  .container-item__price {
-    position: relative;
-    bottom: 1em;
-  }
-  
-  .price {
-    padding: 0 0 0 40px;
-    color: red;
-    font-weight: 600;
-  }
-  
-  .product-info__button {
+  .main-order-form,
+  .main-order-form-code {
     border: 2px solid #000;
-    border-radius: 25px;
-    width: 100px;
-    height: 25px;
-    filter: brightness(80%) contrast(70%);
-    top: 5px;
+    height: 180px;
+    width: 400px;
+  }
+
+  .main-order-form-year {
+    margin: 20px 0 15px 0;
+}
+  
+.main-order-form-mm {
+    width: 13%;
+}
+
+.main-oreder-form-yyyy {
+    width: 16%;
+}
+
+  .main-order-form__input-numbers {
+    border: 2px solid #000;
+    height: 20px;
+    padding-left: 3px;
+    width: 80px;
+  }
+
+  .main-order-form__input-name {
+    text-transform: uppercase;
+  }
+
+  .input-form {
+    border: 2px solid #000;
+    height: 20px;
+    padding-left: 3px;
+  }
+  
+  .main-order-form-card__number-input {
+    width: 95%;
+    text-align: left;
+    word-spacing: 55px;
+    padding-left: 10px;
+  }
+  
+  /*input[placeholder="YYYY"] {
+    width: 16%;
+  }*/
+  
+  .main-order-form {
+    /* margin-top: 60px; */
+    z-index: 1;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .main-order-form-code {
+    position: absolute;
+    margin: 0 0 50px 290px;
+    object-fit: cover;
+  }
+  
+  .main-order-form-numbers {
+    display: flex;
+    justify-content: right;
+    height: 100%;
+    align-items: center;
+    margin: -41px 15px 0 0;
     position: relative;
+  }
+  
+  .main-order-form__button-finish {
+    position: absolute;
+    margin-top: 270px;
+  }
+  
+  button {
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 5px;
+    width: 160px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
   }
   
   footer {
     border-top: 2px solid #000;
     position: relative;
-    margin-top: 10px;
+    flex: 0 0 auto;
   }
   
   .footer-container {
     justify-content: center;
+    height: 3em;
     align-items: center;
   }
   
-  .footer__text {
-    height: 3em;
-  }
-  
-  .footer_container_text {
+  .footer-container__text {
     display: flex;
     justify-content: center;
     border: 2px solid #000;
@@ -184,4 +219,5 @@ body {
     height: 20px;
     align-items: center;
     padding: inherit;
-  }  
+  }
+  

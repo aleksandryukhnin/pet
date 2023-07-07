@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="address-form.css" />
+    <title>Address form</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="header-content-left">
+          <span class="header-content-left__logo">Site LOGO</span>
+        </div>
+        <div class="header-content-right">
+          <div class="header-content-right-search">
+            <img
+              class="header-content-right-search__img"
+              src="https://svgsilh.com/png-1024/1093183.png"
+              alt="Search"
+            />
+            <input
+              class="header-content-right__input"
+              type="text"
+              placeholder="Search"
+            />
+          </div>
+          <div class="header-right-icon">
+            <div class="header-right-basket">
+             <a href="./cart.html"><img
+                src="https://e7.pngegg.com/pngimages/298/70/png-clipart-bertorotta-s-r-l-shopping-cart-computer-icons-shopping-cart-angle-furniture.png"
+                alt="cart"
+              /></a>
+            </div>
+            <div class="header-right-login">
+              <a href="./registration.html"><img
+                src="https://w7.pngwing.com/pngs/209/79/png-transparent-silhouette-user-computer-icons-silhouette-animals-logo-share-icon.png"
+                alt="user"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="shipping-address">
+          <h1>Shipping address</h1>
+          <form>
+            <label for="Country">Country</label>
+            <input type="number" name="Country" id="Country" />
+            <label for="City">City</label>
+            <input type="text" name="City" id="City" />
+            <label for="Address">Address</label>
+            <input type="text" name="Address" id="Address" />
+            <label for="ZIP">ZIP</label>
+            <input type="number" name="ZIP" id="ZIP" />
+          </form>
+        </section>
+        <section class="billing-address">
+          <h1>Billing address</h1>
+          <form>
+            <label for="Country">Country</label>
+            <input type="number" name="Country" id="Country" />
+            <label for="City">City</label>
+            <input type="text" name="City" id="City" />
+            <label for="Address">Address</label>
+            <input type="text" name="Address" id="Address" />
+            <label for="ZIP">ZIP</label>
+            <input type="number" name="ZIP" id="ZIP" />
+            <input class="form__input" type="checkbox" />
+            <p>My billing address is the same</p>
+          </form>
+        </section>
+      </div>
+      <button>Continue</button>
+    </main>
+    <footer>
+      <div class="footer-container footer__text">
+        <p class="footer-container__text">C</p>
+      </div>
+    </footer>
+  </body>
+</html>

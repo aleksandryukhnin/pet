@@ -1,72 +1,75 @@
 * {
-    font-family: Arial, Roboto, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: Arial, Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  main {
-    max-width: 1300px;
-    width: 100%;
-  }
+body {
+  display: flex;
+  justify-content: center;
+}
 
-  body {
-    display: flex;
-    justify-content: center;
-  }
-  
-  section {
-    width: 185px;
-    margin: 0 auto;
-  }
-  
-  form {
-    border: 2px solid black;
-    width: 320px;
-    height: 200px;
-    position: absolute;
+main {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+section {
+  width: 185px;
+  margin: 0 auto;
+}
+
+form {
+  border: 2px solid black;
+  width: 320px;
+  height: 200px;
+  /*position: absolute;
     top: 15em;
-    /*margin: 15px auto;
+    margin: 15px auto;
     text-align: center;*/
-  }
-  
-  input {
-    margin: 30px 0 0 0;
-    border: 2px solid black;
-    padding: 5px 0 5px 5px;
-    width: 180px;
-  }
-  
-  input:last-of-type {
-    margin-top: 2px;
-  }
-  
-  input[type="mail"] {
-    color: red;
-  }
-  
-  button {
-    width: 188px;
-    border-radius: 15px;
-    margin: 25px 0 25px 0;
-    /*margin-top: 10px;*/
-    height: 25px;
-    background-color: lightgray;
-    font-weight: 600;
-  }
-  
-  a {
-    text-align: right;
-    display: block;
-    font-size: 13px;
-  }
-  
-  img {
-    border: solid 2px;
-    width: 15px;
-    height: 15px;
-    position: relative;
-    bottom: 182px;
-    left: 303px;
-    display: block;
-  }
-  
+}
+
+.form__input-mail,
+.form__input-password {
+  margin: 30px 0 10px 0;
+  border: 2px solid black;
+  padding: 5px 0 5px 5px;
+  width: 180px;
+}
+
+input:last-of-type {
+  margin: 2px 0 20px 0;
+}
+
+input[type="mail"] {
+  color: red;
+}
+
+.form__button-register {
+  width: 188px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  height: 25px;
+  background-color: lightgray;
+  font-weight: 600;
+}
+
+.form__text-sign {
+  text-align: right;
+  display: block;
+  font-size: 13px;
+}
+
+.form__img-close {
+  border: solid 2px;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  bottom: 170px;
+  left: 303px;
+  /*display: block;*/
+}
