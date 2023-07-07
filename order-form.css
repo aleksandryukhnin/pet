@@ -117,8 +117,27 @@
     height: 180px;
     width: 400px;
   }
+
+  .main-order-form-year {
+    margin: 20px 0 15px 0;
+}
   
-  input {
+.main-order-form-mm {
+    width: 13%;
+}
+
+.main-oreder-form-yyyy {
+    width: 16%;
+}
+
+  .main-order-form__input-numbers {
+    border: 2px solid #000;
+    height: 20px;
+    padding-left: 3px;
+    width: 80px;
+  }
+
+  .input-form {
     border: 2px solid #000;
     height: 20px;
     padding-left: 3px;
@@ -131,18 +150,9 @@
     padding-left: 10px;
   }
   
-  input[placeholder="MM"] {
-    margin: 20px 0 15px 0;
-    width: 13%;
-  }
-  
-  input[placeholder="YYYY"] {
+  /*input[placeholder="YYYY"] {
     width: 16%;
-  }
-  
-  input[placeholder="123"] {
-    width: 80px;
-  }
+  }*/
   
   .main-order-form {
     /* margin-top: 60px; */
