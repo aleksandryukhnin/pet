@@ -174,9 +174,13 @@ body {
     flex-direction: column;
     margin-top: 35px;
   }
+
+  .basket-description__text {
+    font-size: 20px; 
+  }
   
   p {
-    font-size: 20px;
+   /*font-size: 20px;*/
     margin: 0;
     padding: 0;
   }
